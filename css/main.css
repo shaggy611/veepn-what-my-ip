@@ -1,0 +1,147 @@
+/*FONTS============================================================*/
+
+@font-face {
+  font-family: "Hind";
+  src: url("/css/fonts/Hind-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url("/css/fonts/Hind-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url("/css/fonts/Hind-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url("/css/fonts/Hind-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url("/css/fonts/Hind-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*=================================================================*/
+
+/*  COMMON STYLES==================================================*/
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  -moz-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.veepn-logo {
+  width: 153px;
+  height: 70px;
+}
+
+.veepn-download-button {
+  width: 334px;
+  height: 60px;
+  background: #009B64;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+
+.heading-first {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.heading-second {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 140%;
+  color: #2A334F;
+}
+
+.heading-third {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.paragraph {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 170%;
+  color: #2A334F;
+}
+/*=================================================================*/
+.header_padding {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.stay-safe {
+  height: 864px;
+  background: url('/img/main-screen-logo.png');
+}
+
+.stay-safe__heading {
+  margin-bottom: 16px;
+}
+
+.stay-safe__parag {
+  margin-bottom: 62px;
+}
+
