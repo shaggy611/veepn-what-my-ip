@@ -1,36 +1,36 @@
 /*FONTS============================================================*/
 
 @font-face {
-  font-family: "Hind";
-  src: url("/css/fonts/Hind-Bold.ttf");
+  font-family: "ProximaNova";
+  src: url("/css/fonts/ProximaNova-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Hind";
-  src: url("/css/fonts/Hind-Light.ttf");
+  font-family: "ProximaNova";
+  src: url("/css/fonts/ProximaNova-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Hind";
-  src: url("/css/fonts/Hind-Medium.ttf");
+  font-family: "ProximaNova";
+  src: url("/css/fonts/ProximaNova-Black.ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Hind";
-  src: url("/css/fonts/Hind-Regular.ttf");
+  font-family: "ProximaNova";
+  src: url("/css/fonts/ProximaNova-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Hind";
-  src: url("/css/fonts/Hind-SemiBold.ttf");
+  font-family: "ProximaNova";
+  src: url("/css/fonts/ProximaNova-SemiBold.ttf");
   font-weight: 600;
   font-style: normal;
 }
@@ -66,7 +66,7 @@ button:focus,
 }
 
 body {
-  font-family: "Hind", sans-serif;
+  font-family: "ProximaNova", sans-serif;
 }
 
 .wrapper {
@@ -81,67 +81,115 @@ a:hover {
   text-decoration: none;
 }
 
-.veepn-logo {
-  width: 153px;
-  height: 70px;
-}
-
-.veepn-download-button {
-  width: 334px;
-  height: 60px;
-  background: #009B64;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 47px;
-  color: #FFFFFF;
-}
-
 .heading-first {
   font-weight: bold;
-  font-size: 56px;
-  line-height: 140%;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.heading-second {
-  font-weight: 600;
   font-size: 46px;
-  line-height: 140%;
+  line-height: 56px;
   color: #2A334F;
-}
-
-.heading-third {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 35px;
-  text-align: center;
 }
 
 .paragraph {
   font-weight: normal;
-  font-size: 20px;
-  line-height: 170%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main-font {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
   color: #2A334F;
 }
 /*=================================================================*/
+.header__download-btn {
+  width: 220px;
+  height: 54px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #009B64;
+  background: transparent;
+  color: #009B64;
+  border-radius: 10px;
+}
+
 .header_padding {
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-.stay-safe {
-  height: 864px;
-  background: url('/img/main-screen-logo.png');
+.header__veepn-logo {
+  width: 107px;
 }
 
-.stay-safe__heading {
-  margin-bottom: 16px;
+.header {
+    height: auto;
+    background: #FFFFFF;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid lightgray;
 }
 
-.stay-safe__parag {
-  margin-bottom: 62px;
+.header__navs {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2A334F;
+  margin-right: 9px;
+}
+
+.header__nav-buttons-wrapper {
+  width: 634px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header__download-btn {
+    width: 136px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    margin-right: 20px !important;
+  }
+
+  .header__veepn-logo {
+    width: 107px;
+    margin-left: 10px;
+  }
+  .header {
+    position: fixed;
+    height: auto;
+    background: #FFFFFF;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid lightgray;
+    animation-duration: 200ms;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    height: auto;
+    background: #FFFFFF;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid lightgray;
+    animation-duration: 200ms;
+  }
+
+  .header__veepn-logo {
+    width: 157px;
+    margin-left: 10px;
+  }
+
+  .header__download-btn {
+    margin-top: 10px;
+  }
 }
 
