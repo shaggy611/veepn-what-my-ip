@@ -18,11 +18,13 @@ window.onload = function() {
     };
 
     document.querySelector(".js-close-dns").onclick = function() {
-        document.querySelector(".dns-pop-up").style.display = "none !important";
+        document.querySelector(".dns-pop-up").style.display = "none";
+        document.querySelector(".webrtc-pop-up").style.display = "none";
         document.querySelector(".js-ip-info").style.display = "flex";
     }
 
     document.querySelector(".js-close-webrtc").onclick = function() {
+        document.querySelector(".dns-pop-up").style.display = "none";
         document.querySelector(".webrtc-pop-up").style.display = "none";
         document.querySelector(".js-ip-info").style.display = "flex";
     }
