@@ -47,7 +47,7 @@
               <p class="location__heading heading-first">What is my IP address location?</p>
             </div>
           </div>
-          <div class="row _shadow">
+          <div class="row _shadow js-ip-info">
             <div class="col-xl col-lg col-md">
               
               <div class="location__table-wrapper">
@@ -55,7 +55,7 @@
                   <table class="table table-borderless location__table">
                     <thead>
                       <tr>
-                        <span class="tablet-head-text">Your IP: 95.72.40.188<img src="/img/copy.svg" alt="copy" class="ml-2"></span>
+                        <div class="tablet-head-text">Your IP: 95.72.40.188<img src="/img/copy.svg" alt="copy" class="ml-2"></div>
                       </tr>
                     </thead>
                     <tbody>
@@ -114,18 +114,17 @@
                       <tr>
                         <th scope="row" class="table-mark-ico"><img src="/img/check.svg" alt="check" class="check"></th>
                         <td class="table-parameter">DNS:</td>
-                        <td class="table-value"><a href="#" class="table-styled-link">162.158.248.89</a><img src="/img/ge-flag.svg" alt="flag" class="dns-flag-img"><img src="/img/attention.svg" alt="attention"></td>
+                        <td class="table-value"><span class="table-styled-link js-dns">162.158.248.89</span><img src="/img/ge-flag.svg" alt="flag" class="dns-flag-img"><img src="/img/attention.svg" alt="attention"></td>
                       </tr>
                       <tr>
                         <th scope="row" class="table-mark-ico"><img src="/img/check.svg" alt="check" class="check"></th>
                         <td class="table-parameter">WebRTC:</td>
-                        <td class="table-value"><a href="#" class="table-styled-link">Potential Leak</a></td>
+                        <td class="table-value"><span class="table-styled-link js-webrtc">Potential Leak</span></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-
             </div>
             <div class="col-xl col-lg col-md">
               <div class="location__map-img">
@@ -133,6 +132,133 @@
               </div>
             </div>
           </div>
+
+          <div class="row _shadow dns-pop-up">
+            <div class="col-xl col-lg col-md">
+              
+              <div class="dns__table-wrapper">
+                <div class="dns-vertical-line"></div>
+                <button type="button" class="close-button js-close-webrtc"><img src="/img/close.svg" alt="close"></button>
+                <div class="dns-left-table-wrapper">
+                  <div class="attention-notification">
+                    <img src="/img/attention-big.svg" alt="attention">
+                    <div class="attention-txt-wrapper">
+                      <p>VeePN</p>
+                      <p>Not connected</p>
+                    </div>
+                  </div>
+                  <p class="dns-info-text">
+                    Your internet service provider (ISP) can track your browsing habits, the apps you use, and much more.
+                  </p>
+                  <p class="dns-info-text dns-veepn-server-txt">
+                    VeePN DNS servers are fast, private, and encrypted.
+                  </p>
+                </div>
+        
+                <div class="dns-right-table-wrapper">
+                  <p class="dns-request">DNS requests exposed!</p>
+                  <p class="dns-log-parag">Whoever runs your DNS Servers can log every website you visit.</p>
+        
+                  <table class="table">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">IP ADRESS</th>
+                        <th scope="col">PROVIDER</th>
+                        <th scope="col">COUNTRY</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>95.72.40.188</td>
+                        <td>Maximum Net</td>
+                        <td>Ukraine</td>
+                      </tr>
+                      <tr>
+                        <td>95.72.40.188</td>
+                        <td>Google Net</td>
+                        <td>Ukraine</td>
+                      </tr>
+                      <tr>
+                        <td>95.72.40.188</td>
+                        <td>Maximum Net</td>
+                        <td>Ukraine</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>   
+            </div>
+          </div>
+
+          <div class="row _shadow webrtc-pop-up">
+            <div class="col-xl col-lg col-md">
+              
+              <div class="dns__table-wrapper">
+                <div class="dns-vertical-line"></div>
+                <button type="button" class="close-button js-close-dns"><img src="/img/close.svg" alt="close"></button>
+                <div class="dns-left-table-wrapper">
+                  <div class="attention-notification">
+                    <img src="/img/attention-big.svg" alt="attention">
+                    <div class="attention-txt-wrapper">
+                      <p>VeePN</p>
+                      <p>Not connected</p>
+                    </div>
+                  </div>
+                  <p class="dns-info-text">
+                    Your internet service provider (ISP) can track your browsing habits, the apps you use, and much more.
+                  </p>
+                  <p class="dns-info-text dns-veepn-server-txt">
+                    VeePN DNS servers are fast, private, and encrypted.
+                  </p>
+                </div>
+        
+                <div class="dns-right-table-wrapper">
+                  <p class="dns-request">WebRTC Leak Test</p>
+                  <p class="dns-log-parag">Your browser is exposing these IPs to websites you visit:</p>
+        
+                  <table class="table">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">IP ADRESS</th>
+                        <th scope="col">TYPE</th>
+                        <th scope="col">STATUS</th>
+                      </tr>
+                    </thead>
+                    <tbody class="disable-border">
+                      <tr>
+                        <td>95.72.40.188</td>
+                        <td>Public IPv4</td>
+                        <td class="dns-red-td-txt">Potential leak</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr class="learn-how">
+                        <td>Learn how to disable WebRTC:</td>
+                        <td>Public IPv4</td>
+                        <td>Potential leak</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
+          
           <div class="row">
             <div class="col-xl-12">
               <a class="btn location__download-btn d-block mx-auto" href="#" role="button">Hide my IP</a>
@@ -151,7 +277,19 @@
           </div>
           <div class="row">
             <div class="col-xl">
-              <img src="/img/ipad-frame.png" alt="ipad frame" class="change-ip_ipad-frame">
+              <!-- <img src="/img/ipad-frame.png" alt="ipad frame" class="change-ip_ipad-frame"> -->
+              <div class="iframe-wrapper">
+                <img src="/img/vedeo-poster.png" alt="poster" class="video-poster">
+              <!-- <iframe 
+                width="697" 
+                height="485" src="https://www.youtube.com/embed/UKNjUsybCNk" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen 
+                >
+              </iframe> -->
+          
+              </div>
             </div>
           </div>
         </div>
@@ -187,7 +325,7 @@
                   <table class="table table-borderless location__table">
                     <thead>
                       <tr>
-                        <span class="tablet-head-text">Your IP: 18.79.58.92<img src="/img/copy.svg" alt="copy" class="ml-2"></span>
+                        <div class="tablet-head-text">Your IP: 18.79.58.92<img src="/img/copy.svg" alt="copy" class="ml-2"></div>
                       </tr>
                     </thead>
                     <tbody>
@@ -293,6 +431,7 @@
           </div>
         </div>
       </section>
+    
 
     </div>
   </div>
