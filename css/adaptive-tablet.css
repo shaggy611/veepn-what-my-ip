@@ -1,11 +1,58 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .location {
+        background: #e9f3ff4f;
+    }
 
-}
+    .location__map-img {
+        background-image: url('/img/map-tablet.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 736px;
+        height: 235px;
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: -2px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+    .location__table-wrapper {
+        width: 728px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-top: 30px;
+        padding-left: 24px;
+        padding-bottom: 44px;
+        padding-right: 24px;
+    }
 
-}
+    .left-table-wrapper {
+        padding-right: 20px;
+    }
 
-@media (min-width: 1024px) and (max-width: 1366px) {
+    .left-table-wrapper:after {
+        border-right: 1px solid #808a9b1e;
+        content: " ";
+        width: 1px;
+        height: 197px;
+        position: absolute;
+        left: 338px;
+        top: 111px;
+    }
 
+    .right-table-wrapper {
+        padding-left: 15px;
+    }
+
+    .table__alert {
+        width: 278px;
+        height: 64px;
+    }
+
+    .location__table-wrapper {
+        box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
+        border-radius: 10px 10px 0px 0px;
+    }
 }
