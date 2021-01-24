@@ -1,6 +1,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .location {
-        background: #e9f3ff4f;
+        background: #e9f3ffa9;
     }
 
     .location__map-img {
@@ -12,10 +12,12 @@
         position: relative;
         left: 0px;
         right: 0px;
-        top: -2px;
+        top: -4px;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.18));
+        border-radius: 0px 0px 10px 10px;
     }
 
     .location__table-wrapper {
@@ -55,4 +57,98 @@
         box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
         border-radius: 10px 10px 0px 0px;
     }
+
+    .location__download-btn {
+        margin-top: 40px;
+    }
+
+    .location__heading {
+        margin-bottom: 35px;
+        margin-top: 39px;
+    }
+
+    .location {
+        padding-bottom: 70px;
+    }
+
+    .change-ip {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    ._shadow {
+        box-shadow: none;
+      }
+
+      .change-ip__heading {
+          text-align: center;
+          width: 728px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .iframe-wrapper {
+          background-image: none;
+      }
+
+      .video-poster {
+          border-radius: 0px;
+          width: 707px;
+          height: 398px;
+      }
+
+      .video-poster-play-btn {
+          top: 192px;
+      }
+
+      iframe {
+        width: 707px !important;
+        height: 398px !important;
+        border-radius: 0px;
+      }
+
+      .change-ip__paragraph {
+        margin-bottom: 20px;
+    }
+
+    .iframe-wrapper {
+        height: auto;
+    }
+
+    .three-steps {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: #E9F3FF;
+    }
+
+    .three-steps__heading {
+        width: 624px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .three-steps__steps-img {
+        content: url('/img/3-steps-tablet.png') !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer__based {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    
+      .footer__copyright {
+        text-align: center;
+      }
 }

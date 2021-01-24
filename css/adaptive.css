@@ -1,3 +1,11 @@
 @media (min-width: 320px) and (max-width: 767px) {
-
+    .footer__based {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    
+      .footer__copyright {
+        text-align: center;
+      }
 }

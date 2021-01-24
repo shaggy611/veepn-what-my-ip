@@ -129,7 +129,8 @@ a:hover {
     background: #FFFFFF;
     width: 100%;
     /* z-index: 100; */
-    box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.4);
+    /* box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.4); */
+    box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
     margin-bottom: 7px;
 }
 
@@ -204,7 +205,7 @@ a:hover {
     background: #FFFFFF;
     width: 100%;
     z-index: 100;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
     animation-duration: 200ms;
   }
 
@@ -792,6 +793,57 @@ iframe {
   background-size: 90%;
   background-position: center;
   cursor: pointer;
+}
+
+.footer {
+  background: #080806;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+}
+
+.footer_padding {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.footer__based {
+  opacity: 0.6;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.footer__copyright {
+  opacity: 0.6;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.footer__terms {
+  text-align: right;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.footer__privacy {
+  text-align: right;
+  color: #ffffff;
+  margin-top: 18px;
+}
+
+.footer__terms:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer__privacy:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.veepn-logo {
+  width: 153px;
+  height: 70px;
 }
 
 
