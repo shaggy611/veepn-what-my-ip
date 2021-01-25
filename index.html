@@ -50,7 +50,7 @@
 
 
         <div class="container">
-              <nav class="navbar navbar-expand-lg navbar-light">
+              <nav class="navbar navbar-expand-md navbar-light">
                 <div class="logo__wrapper">
                   <img src="/img/veepn-logo-black.png" alt="veepn-logo" class="header__veepn-logo align-middle">
                 </div>
@@ -99,6 +99,7 @@
                   <table class="table table-borderless location__table">
                     <thead>
                       <tr>
+                        <img src="/img/ip-red-alert.png" alt="alert" class="d-md-none mx-right table__alert d-block">
                         <div class="tablet-head-text">Your IP: 95.72.40.188<img src="/img/copy.svg" alt="copy" class="ml-2"></div>
                       </tr>
                     </thead>
@@ -132,11 +133,13 @@
                   </table>
                 </div>
 
+                <a class="btn location__download-btn d-block mx-auto d-md-none" href="#" role="button">Hide my IP</a>
+
                 <div class="right-table-wrapper">
                   <table class="table table-borderless location__table">
                     <thead>
                       <tr>
-                        <img src="/img/ip-red-alert.png" alt="alert" class="d-block mx-right table__alert">
+                        <img src="/img/ip-red-alert.png" alt="alert" class="d-md-block mx-right table__alert d-none">
                       </tr>
                     </thead>
                     <tbody>
@@ -265,7 +268,7 @@
                       <tr>
                         <th scope="col">IP ADRESS</th>
                         <th scope="col">TYPE</th>
-                        <th scope="col">STATUS</th>
+                        <th scope="col" class="add-padd">STATUS</th>
                       </tr>
                     </thead>
                     <tbody class="disable-border">
@@ -289,10 +292,15 @@
                         <td></td>
                         <td></td>
                       </tr>
-                      <tr class="learn-how">
+                      
+                    </tbody>
+                  </table>
+                  <table class="learn-how">
+                    <tbody>
+                      <tr>
                         <td>Learn how to disable WebRTC:</td>
-                        <td>Public IPv4</td>
-                        <td>Potential leak</td>
+                        <td><img src="/img/chrome-logo.svg" alt="chrome-logo"></td>
+                        <td><img src="/img/firefox-logo.svg" alt="firefox-logo"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -305,7 +313,7 @@
           
           <div class="row">
             <div class="col-xl-12">
-              <a class="btn location__download-btn d-block mx-auto" href="#" role="button">Hide my IP</a>
+              <a class="btn location__download-btn d-none mx-auto d-md-block" href="#" role="button">Hide my IP</a>
             </div>
           </div>
         </div>
@@ -348,7 +356,7 @@
           </div>
           <div class="row">
             <div class="col-xl">
-              <img src="/img/3-steps.png" alt="steps" class="three-steps__steps-img">
+              <div class="three-steps__steps-img"></div>
             </div>
           </div>
         </div>

@@ -1,4 +1,128 @@
 @media (min-width: 320px) and (max-width: 767px) {
+
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-light .navbar-toggler::before {
+    content: ' ';
+    height: 18px;
+    width: 1px;
+    border-left: 1px solid rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 15px;
+    right: 62px;
+  }
+
+  .heading-first {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .location {
+    padding-top: 30px;
+    padding-bottom: 141px;
+}
+
+.location__table-wrapper {
+  width: 375px;
+  display: block;
+  height: 736px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  background: none;
+}
+
+.location__map-img {
+  display: none;
+}
+
+.table th, .table td {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.right-table-wrapper {
+  padding-left: 0px;
+  width: 345px;
+}
+
+.location__table {
+  width: 299px !important;
+}
+
+.left-table-wrapper {
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 345px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 21px;
+}
+
+.right-table-wrapper {
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 21px;
+}
+
+._shadow {
+  box-shadow: none;
+}
+
+.location__download-btn {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.table__alert {
+  margin-bottom: 24px;
+}
+
+.tablet-head-text {
+  padding-left: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .footer__based {
         text-align: center;
         margin-top: 0;

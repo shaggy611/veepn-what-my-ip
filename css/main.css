@@ -101,6 +101,12 @@ a:hover {
   color: #2A334F;
 }
 /*=================================================================*/
+.navbar-expand-md .navbar-nav {
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
 .header__download-btn {
   width: 220px;
   height: 54px;
@@ -128,10 +134,9 @@ a:hover {
     height: auto;
     background: #FFFFFF;
     width: 100%;
-    /* z-index: 100; */
+    z-index: 100;
     /* box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.4); */
     box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
-    margin-bottom: 7px;
 }
 
 .header__navs {
@@ -165,12 +170,10 @@ a:hover {
     margin-left: 10px;
   }
   .header {
-    position: fixed;
     height: auto;
     background: #FFFFFF;
     width: 100%;
     z-index: 100;
-    border-bottom: 1px solid lightgray;
     animation-duration: 200ms;
   }
 }
@@ -200,7 +203,6 @@ a:hover {
 }
 
   .header {
-    position: fixed;
     height: auto;
     background: #FFFFFF;
     width: 100%;
@@ -212,7 +214,7 @@ a:hover {
   .header__veepn-logo {
     width: 121px;
     margin-left: 25px;
-    height: 46px;
+    height: 53px;
 }
 
   .header__download-btn {
@@ -356,6 +358,8 @@ a:hover {
 border-radius: 10px;
 margin-right: 0;
     margin-left: auto;
+    width: 300px;
+    height: 70px;
 }
 
 .change-ip {
@@ -390,8 +394,14 @@ margin-right: 0;
 }
 
 .three-steps__steps-img {
+  background-image: url('/img/3-steps.png');
+  background-repeat: no-repeat;
   display: block;
   width: 1120px;
+  height: 430px;
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hide-data {
@@ -704,7 +714,7 @@ iframe {
 
 .dns-right-table-wrapper {
   padding-left: 30px;
-  width: 633px;
+  width: 667px;
 }
 
 .table .thead-light th {
@@ -734,7 +744,7 @@ iframe {
   position: absolute;
   width: 1px;
   height: 230px;
-  left: 368px;
+  left: 400px;
   top: 79px;
   background: #808A9B;
   opacity: 0.2;
@@ -743,6 +753,8 @@ iframe {
 
 .dns-red-td-txt {
   color: #FF2D55 !important;
+  width: 218px;
+  padding-left: 46px !important;
 }
 
 .disable-border > tr > td {
@@ -752,6 +764,29 @@ iframe {
 .learn-how {
   background: #E9F3FF;
   border-radius: 4px;
+  width: 637px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2A334F;
+  height: 48px;
+}
+
+.learn-how > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.learn-how > tbody > tr > td:first-child {
+  padding-left: 29px;
+  width: 335px;
+}
+
+.learn-how > tbody > tr > td:nth-child(2) {
+  width: 130px;
+}
+
+.add-padd {
+  padding-left: 46px !important;
 }
 
 
@@ -794,6 +829,10 @@ iframe {
   background-position: center;
   cursor: pointer;
 }
+
+.special-price {
+        padding-bottom: 140px;
+    }
 
 .footer {
   background: #080806;

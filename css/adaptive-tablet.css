@@ -69,6 +69,7 @@
 
     .location {
         padding-bottom: 70px;
+        padding-top: 0px;
     }
 
     .change-ip {
@@ -128,20 +129,33 @@
     }
 
     .three-steps__steps-img {
-        content: url('/img/3-steps-tablet.png') !important;
+        background-image: url('/img/3-steps-tablet.png');
+        background-size: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 760px;
+        height: 728px;
     }
 
+    .three-steps__heading {
+        margin-bottom: 39px;
+    }
 
+    .hide-data {
+        padding-bottom: 70px;
+    }
 
+    .special-price {
+        padding-bottom: 70px;
+    }
 
+    .hide-ip__map-img {
+        background-image: url('/img/hide-data-map-tablet.png');
+    }
 
-
-
-
-
-
-
-
+    .map-pont {
+        display: none;
+    }
     .footer__based {
         text-align: center;
         margin-top: 0;
@@ -151,4 +165,47 @@
       .footer__copyright {
         text-align: center;
       }
+
+      .dns-vertical-line {
+          display: none;
+      }
+
+      .close-button {
+          left: 669px;
+      }
+
+      .dns__table-wrapper {
+          display: block;
+          height: 650px;
+          width: 728px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 64px;
+          padding-left: 78px;
+      }
+
+      .dns-right-table-wrapper {
+        padding-left: 0px;
+        width: 589px;
+        margin-left: -29px;
+    }
+
+    .dns-request {
+        margin-top: 41px;
+    }
+
+    .dns-info-text {
+        width: 421px;
+    }
+
+    .table {
+        width: 108%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .location__table-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
