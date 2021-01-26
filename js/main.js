@@ -1,4 +1,7 @@
 window.onload = function() {
+    
+
+
     $(".video-poster-play-btn").on('click', function(ev) {
         $(".video-poster").css({'display' : 'none'});
         $(".video-poster-play-btn").css({'display' : 'none'});
@@ -10,6 +13,7 @@ window.onload = function() {
       
     document.querySelector(".js-dns").onclick = function() {
         showPopUpDns();
+        
     };
 
     // document.querySelector(".js-dns-hide").onclick = function() {
@@ -22,33 +26,44 @@ window.onload = function() {
 
     function showPopUpDns() {
         document.querySelector(".dns-pop-up").style.display = "block";
+        document.querySelector(".js-blur").classList.add("blur");
+        document.querySelector(".js-scroll").classList.add("unscrollable");
+        // document.querySelector(".wrapper").style.zIndex = "999";
         document.querySelector(".js-ip-info").style.display = "none";
+        document.querySelector(".js-scroll").scrollIntoView();
     };
 
     function showPopUpWebRtc() {
         document.querySelector(".webrtc-pop-up").style.display = "block";
         document.querySelector(".js-ip-info").style.display = "none";
+        document.querySelector(".js-blur").classList.add("blur");
+        document.querySelector(".js-scroll").classList.add("unscrollable");
+        document.querySelector(".js-scroll").scrollIntoView();
     };
 
-    function showPopUpDnsHide() {
-        document.querySelector(".hide-dns-pop-up").style.display = "block";
-        document.querySelector(".js-ip-info-hide").style.display = "none";
-    };
+    // function showPopUpDnsHide() {
+    //     document.querySelector(".hide-dns-pop-up").style.display = "block";
+    //     document.querySelector(".js-ip-info-hide").style.display = "none";
+    // };
 
     document.querySelector(".js-close-dns").onclick = function() {
         document.querySelector(".dns-pop-up").style.display = "none";
         document.querySelector(".webrtc-pop-up").style.display = "none";
         document.querySelector(".js-ip-info").style.display = "flex";
+        document.querySelector(".js-blur").classList.remove("blur");
+        document.querySelector(".js-scroll").classList.remove("unscrollable");
     }
 
     document.querySelector(".js-close-webrtc").onclick = function() {
         document.querySelector(".dns-pop-up").style.display = "none";
         document.querySelector(".webrtc-pop-up").style.display = "none";
         document.querySelector(".js-ip-info").style.display = "flex";
+        document.querySelector(".js-blur").classList.remove("blur");
+        document.querySelector(".js-scroll").classList.remove("unscrollable");
     }
 
-    document.querySelector(".js-close-dns-hide").onclick = function() {
-        document.querySelector(".hide-dns-pop-up").style.display = "none";
-        document.querySelector(".js-ip-info-hide").style.display = "flex";
-    }
+    // document.querySelector(".js-close-dns-hide").onclick = function() {
+    //     document.querySelector(".hide-dns-pop-up").style.display = "none";
+    //     document.querySelector(".js-ip-info-hide").style.display = "flex";
+    // }
 }

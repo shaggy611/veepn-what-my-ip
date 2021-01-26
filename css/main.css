@@ -121,8 +121,8 @@ a:hover {
 }
 
 .header_padding {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__veepn-logo {
@@ -157,12 +157,14 @@ a:hover {
 
 @media (min-width: 375px) and (max-width: 767px) {
   .header__download-btn {
-    width: 136px;
+    width: 201px;
     height: 45px;
     font-weight: 400;
     font-size: 16px;
     line-height: 34px;
-    margin-right: 20px !important;
+    margin-right: 12px !important;
+    margin-left: 12px;
+    margin-top: 10px;
   }
 
   .header__veepn-logo {
@@ -173,8 +175,9 @@ a:hover {
     height: auto;
     background: #FFFFFF;
     width: 100%;
-    z-index: 100;
+    z-index: 1001;
     animation-duration: 200ms;
+    position: fixed;
   }
 }
 
@@ -269,7 +272,7 @@ a:hover {
 }
 
 .table-parameter {
-  font-weight: normal;
+  font-weight: normal !important;
   font-size: 18px;
   line-height: 22px;
   color: #2A334F;
@@ -623,6 +626,7 @@ margin-right: 0;
     width: 698px;
     height: 484px;
     border-radius: 12px;
+
 }
 
 iframe {
@@ -825,6 +829,10 @@ iframe {
 }
 
 .video-poster-play-btn:hover {
+  background-size: 98%;
+}
+
+.video-poster-play-btn:hover {
   background-size: 90%;
   background-position: center;
   cursor: pointer;
@@ -883,6 +891,22 @@ iframe {
 .veepn-logo {
   width: 153px;
   height: 70px;
+}
+
+.appstore-download {
+  display: none;
+}
+
+.googleplay-download {
+  display: none;
+}
+
+.dns-table-mobile {
+  display: none;
+}
+
+.webrtc-table-mobile {
+  display: none;
 }
 
 

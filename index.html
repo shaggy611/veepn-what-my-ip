@@ -19,35 +19,11 @@
   <link rel="stylesheet" href="/css/adaptive.css" />
   <link rel="stylesheet" href="/css/adaptive-tablet.css" />
 </head>
-<body>
+<body class="js-scroll">
+  <div class="js-blur"></div>
   <div class="wrapper">
     <div class="main-container">
       <header class="header header_padding">
-        <!-- <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-2">
-              <div class="logo__wrapper">
-                <img src="/img/veepn-logo-black.png" alt="veepn-logo" class="header__veepn-logo align-middle">
-              </div>
-              
-              
-            </div>
-            <div class="col-xl-9 col-lg-9 col-md-10">
-              <div class="header__nav-buttons-wrapper">
-                <a class="btn header__navs" href="#" role="button">WHAT IS VPN?</a>
-                <a class="btn header__navs" href="#" role="button">VPN for Apps</a>
-                <a class="btn header__navs" href="#" role="button">Support</a>
-                <a class="btn header__download-btn" href="#" role="button">Protect All Your Devices</a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-
-
-
-
 
         <div class="container">
               <nav class="navbar navbar-expand-md navbar-light">
@@ -75,13 +51,6 @@
                 </div>
               </nav>
         </div>
-
-
-
-
-
-
-
       </header>
 
       <section class="location">
@@ -179,7 +148,8 @@
               </div>
             </div>
           </div>
-
+          <!-- DNS POP-UP======================================================================================================= -->
+          
           <div class="row _shadow dns-pop-up">
             <div class="col-xl col-lg col-md">
               
@@ -206,7 +176,7 @@
                   <p class="dns-request">DNS requests exposed!</p>
                   <p class="dns-log-parag">Whoever runs your DNS Servers can log every website you visit.</p>
         
-                  <table class="table">
+                  <table class="table _hide-on-mobile">
                     <thead class="thead-light">
                       <tr>
                         <th scope="col">IP ADRESS</th>
@@ -232,11 +202,33 @@
                       </tr>
                     </tbody>
                   </table>
+
+                  <table class="table dns-table-mobile">
+
+                    <tbody>
+                      <tr>
+                        <td class="text-left font-weight-bold">IP ADRESS:</td>
+                        <td class="text-right font-weight-bold">95.72.40.188</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left font-weight-bold">PROVIDER:</td>
+                        <td class="text-right font-weight-bold">Maximum Net</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left font-weight-bold">COUNTRY:</td>
+                        <td class="text-right font-weight-bold">Ukraine</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              </div>   
+              </div>
+              <a class="btn location__download-btn location__download-btn-popup d-block mx-auto d-md-none" href="#" role="button">Hide my IP</a>   
             </div>
           </div>
 
+          <!-- DNS POP-UP======================================================================================================= -->
+
+          <!-- WEB-RTC POP-UP=================================================================================================== -->
           <div class="row _shadow webrtc-pop-up">
             <div class="col-xl col-lg col-md">
               
@@ -263,7 +255,7 @@
                   <p class="dns-request">WebRTC Leak Test</p>
                   <p class="dns-log-parag">Your browser is exposing these IPs to websites you visit:</p>
         
-                  <table class="table">
+                  <table class="table _hide-on-mobile">
                     <thead class="thead-light">
                       <tr>
                         <th scope="col">IP ADRESS</th>
@@ -295,7 +287,7 @@
                       
                     </tbody>
                   </table>
-                  <table class="learn-how">
+                  <table class="learn-how _hide-on-mobile">
                     <tbody>
                       <tr>
                         <td>Learn how to disable WebRTC:</td>
@@ -304,12 +296,31 @@
                       </tr>
                     </tbody>
                   </table>
+
+                  <table class="table webrtc-table-mobile">
+
+                    <tbody>
+                      <tr>
+                        <td class="text-left font-weight-bold">IP ADRESS:</td>
+                        <td class="text-right font-weight-bold">95.72.40.188</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left font-weight-bold">TYPE:</td>
+                        <td class="text-right font-weight-bold">Public IPv4</td>
+                      </tr>
+                      <tr>
+                        <td class="text-left font-weight-bold">STATUS:</td>
+                        <td class="text-right font-weight-bold dns-red-td-txt">Potential leak</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-        
+              <a class="btn location__download-btn location__download-btn-popup d-block mx-auto d-md-none" href="#" role="button">Hide my IP</a> 
             </div>
         
           </div>
+          <!-- WEB-RTC POP-UP=================================================================================================== -->
           
           <div class="row">
             <div class="col-xl-12">
@@ -329,10 +340,9 @@
           </div>
           <div class="row">
             <div class="col-xl">
-              <!-- <img src="/img/ipad-frame.png" alt="ipad frame" class="change-ip_ipad-frame"> -->
               <div class="iframe-wrapper">
-                <img src="/img/vedeo-poster.png" alt="poster" class="video-poster d-md-none d-lg-block">
-                <img src="/img/video-poster-tablet.png" alt="poster" class="video-poster d-lg-none d-md-block">
+                <img src="/img/vedeo-poster.png" alt="poster" class="video-poster">
+                <img src="/img/video-poster-tablet.png" alt="poster" class="video-poster">
                 <div class="video-poster-play-btn"></div>
               <iframe 
                 
@@ -352,6 +362,8 @@
           <div class="row">
             <div class="col-xl">
               <p class="three-steps__heading heading-first">3 easy steps for your secure in the internet</p>
+              <a href="#"><img src="/img/appstore-download.png" alt="appstore-download" class="appstore-download"></a>
+              <a href="#"><img src="/img/googleplay-download.png" alt="google-play-download" class="googleplay-download"></a>
             </div>
           </div>
           <div class="row">
@@ -378,6 +390,7 @@
                   <table class="table table-borderless location__table">
                     <thead>
                       <tr>
+                        <img src="/img/protected.png" alt="protected" class="d-md-none d-lg-none d-block mx-right table__alert">
                         <div class="tablet-head-text">Your IP: 18.79.58.92<img src="/img/copy.svg" alt="copy" class="ml-2"></div>
                       </tr>
                     </thead>
@@ -411,11 +424,11 @@
                   </table>
                 </div>
 
-                <div class="right-table-wrapper">
+                <div class="right-table-wrapper d-none d-md-block d-lg-block">
                   <table class="table table-borderless location__table">
                     <thead>
                       <tr>
-                        <img src="/img/protected.png" alt="protected" class="d-block mx-right table__alert">
+                        <img src="/img/protected.png" alt="protected" class="d-none d-md-block mx-right table__alert">
                       </tr>
                     </thead>
                     <tbody>
