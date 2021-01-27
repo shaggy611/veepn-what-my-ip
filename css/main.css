@@ -88,6 +88,20 @@ a:hover {
   color: #2A334F;
 }
 
+.heading-second {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #2A334F;
+}
+
+.heading-third {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2A334F;
+}
+
 .paragraph {
   font-weight: normal;
   font-size: 16px;
@@ -105,6 +119,20 @@ a:hover {
   align-items: center;
   margin-left: auto;
   margin-right: 20px;
+}
+
+.header__language-button {
+  background: transparent;
+  border: 2px solid #2a334f;
+  color: #2A334F;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 30px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: 5px;
 }
 
 .header__download-btn {
@@ -908,6 +936,161 @@ iframe {
 .webrtc-table-mobile {
   display: none;
 }
+
+.copy-button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+
+.downloading-veepn {
+  background: #E9F3FF;
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+}
+
+.downloading-veepn__heading {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.downloading-veepn__paragraph {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 74px;
+}
+
+.downloading-veepn__paragraph > a {
+  font-weight: bold;
+}
+
+.downloading-veepn__install-heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2A334F;
+  margin-top: 11px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.downloading-veepn__install-paragraph {
+  width: 273px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #2A334F;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.downloading-veepn__install-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.scan-qr-wrapper {
+  display: flex;
+  position: relative;
+  left: 60%;
+  top: -28%
+}
+
+.scan-qr-wrapper > p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2A334F;
+  margin-left: 12px;
+  width: 138px;
+}
+
+.downloading-veepn__scan-qr {
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.downloading-veepn__heading-second {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.downloading-veepn__dwnld-btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  width: 583px;
+}
+
+.downloading-veepn__dwnld-btn-wrapper:nth-child(2) {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.installing-veepn__heading {
+  text-align: center;
+  margin-bottom: 59px;
+  
+}
+
+.installing-veepn {
+  padding-top: 52px;
+  padding-bottom: 70px;
+  background: #E9F3FF;
+}
+
+.install-veepn__list {
+  font-size: 16px;
+  line-height: 26px;
+  color: #2A334F;
+  width: 295px;
+}
+
+.install-veepn__list > li {
+  margin-bottom: 7px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.install-veepn__list > li::before {
+  content: url('/img/installing-page-check.svg');
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.installing-veepn__upgrade-btn {
+  width: 280px;
+  height: 52px;
+  background: #009B64;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 38px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.installing-veepn__continue-btn {
+  width: 280px;
+  height: 52px;
+  border: 1px solid #009B64;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 38px;
+  color: #009B64;
+  margin-bottom: 40px;
+}
+
+
 
 
 

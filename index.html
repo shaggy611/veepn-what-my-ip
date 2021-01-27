@@ -28,8 +28,9 @@
         <div class="container">
               <nav class="navbar navbar-expand-md navbar-light">
                 <div class="logo__wrapper">
-                  <img src="/img/veepn-logo-black.png" alt="veepn-logo" class="header__veepn-logo align-middle">
+                  <a href="/index.html"><img src="/img/veepn-logo-black.png" alt="veepn-logo" class="header__veepn-logo align-middle"></a>
                 </div>
+                <button type="button" class="header__language-button d-block d-md-none d-lg-none">RU</button>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -69,7 +70,12 @@
                     <thead>
                       <tr>
                         <img src="/img/ip-red-alert.png" alt="alert" class="d-md-none mx-right table__alert d-block">
-                        <div class="tablet-head-text">Your IP: 95.72.40.188<img src="/img/copy.svg" alt="copy" class="ml-2"></div>
+                        <div class="tablet-head-text">
+                          Your IP: <span class="client-ip">95.72.40.188</span>
+                          <button class="copy-button">
+                            <img src="/img/copy.svg" alt="copy" class="ml-2">
+                          </button>
+                        </div>
                       </tr>
                     </thead>
                     <tbody>
@@ -391,7 +397,7 @@
                     <thead>
                       <tr>
                         <img src="/img/protected.png" alt="protected" class="d-md-none d-lg-none d-block mx-right table__alert">
-                        <div class="tablet-head-text">Your IP: 18.79.58.92<img src="/img/copy.svg" alt="copy" class="ml-2"></div>
+                        <div class="tablet-head-text">Your IP: 18.79.58.92 <button class="copy-button"><img src="/img/copy.svg" alt="copy" class="ml-2"></button> </div>
                       </tr>
                     </thead>
                     <tbody>

@@ -1,4 +1,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
+  .dns-vertical-line {
+    display: none;
+  }
 
   .navbar-light .navbar-toggler {
     border: none;
@@ -9,7 +12,7 @@
     content: ' ';
     height: 18px;
     width: 1px;
-    border-left: 1px solid rgba(0, 0, 0, 0.384);
+    border-left: 1px solid rgba(42, 51, 79, 1);
     position: absolute;
     top: 15px;
     right: 48px;
@@ -314,8 +317,9 @@ iframe {
 
 .dns-pop-up {
   margin-top: 0px;
-  position: fixed !important;
-  top: 75px;
+  position: relative !important;
+  padding-bottom: 62px;
+  top: -13px;
   z-index: 1000;
   background: #F2F7FD;
   z-index: 1000;
@@ -325,8 +329,9 @@ iframe {
 
 .webrtc-pop-up {
   margin-top: 0px;
-  position: fixed !important;
-  top: 75px;
+  position: relative !important;
+  padding-bottom: 62px;
+  top: -13px;
   z-index: 1000;
   background: #F2F7FD;
   z-index: 1000;
