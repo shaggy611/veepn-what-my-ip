@@ -3,7 +3,7 @@ window.onload = function() {
     copyButton.onclick = function() {
         let copyText = document.querySelector(".client-ip").textContent;
         
-        
+        console.log(copyText);
 
         navigator.clipboard.writeText( copyText );
 
