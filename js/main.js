@@ -2,8 +2,16 @@ window.onload = function() {
     let copyButton = document.querySelector(".copy-button");
     copyButton.onclick = function() {
         let copyText = document.querySelector(".client-ip").textContent;
-        document.execCommand("copy");
-        // navigator.clipboard.writeText(copyText);
+        
+        
+
+        navigator.clipboard.writeText( copyText );
+
+        
+
+
+
+        
     }
 
 
