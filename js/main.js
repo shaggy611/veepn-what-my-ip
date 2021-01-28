@@ -6,12 +6,7 @@ window.onload = function() {
         console.log(copyText);
 
         navigator.clipboard.writeText( copyText );
-
-        
-
-
-
-        
+  
     }
 
 
