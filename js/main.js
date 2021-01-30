@@ -1,12 +1,18 @@
 window.onload = function() {
     let copyButton = document.querySelector(".copy-button");
     copyButton.onclick = function() {
+        let ipInfo = document.querySelector(".client-ip");
         let copyText = document.querySelector(".client-ip").textContent;
+        if(navigator.clipboard) {
+            navigator.clipboard.writeText( copyText );
+            console.log("copied with clipboard API");
+        }
+        else {
+            ipInfo.select();
+            document.execCommand("copy");
+            console.log("copied with execCommand");
+        }
         
-        console.log(copyText);
-
-        navigator.clipboard.writeText( copyText );
-  
     }
 
 
@@ -24,10 +30,6 @@ window.onload = function() {
         
     };
 
-    // document.querySelector(".js-dns-hide").onclick = function() {
-    //     showPopUpDnsHide();
-    // };
-
     document.querySelector(".js-webrtc").onclick = function() {
         showPopUpWebRtc();
     };
@@ -36,7 +38,6 @@ window.onload = function() {
         document.querySelector(".dns-pop-up").style.display = "block";
         document.querySelector(".js-blur").classList.add("blur");
         document.querySelector(".js-scroll").classList.add("unscrollable");
-        // document.querySelector(".wrapper").style.zIndex = "999";
         document.querySelector(".js-ip-info").style.display = "none";
         document.querySelector(".js-scroll").scrollIntoView();
     };
@@ -48,11 +49,6 @@ window.onload = function() {
         document.querySelector(".js-scroll").classList.add("unscrollable");
         document.querySelector(".js-scroll").scrollIntoView();
     };
-
-    // function showPopUpDnsHide() {
-    //     document.querySelector(".hide-dns-pop-up").style.display = "block";
-    //     document.querySelector(".js-ip-info-hide").style.display = "none";
-    // };
 
     document.querySelector(".js-close-dns").onclick = function() {
         document.querySelector(".dns-pop-up").style.display = "none";
@@ -69,9 +65,4 @@ window.onload = function() {
         document.querySelector(".js-blur").classList.remove("blur");
         document.querySelector(".js-scroll").classList.remove("unscrollable");
     }
-
-    // document.querySelector(".js-close-dns-hide").onclick = function() {
-    //     document.querySelector(".hide-dns-pop-up").style.display = "none";
-    //     document.querySelector(".js-ip-info-hide").style.display = "flex";
-    // }
 }

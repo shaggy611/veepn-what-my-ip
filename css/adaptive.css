@@ -348,9 +348,9 @@ iframe {
   backdrop-filter: blur(4px);
 }
 
-/* .unscrollable {
-  overflow: hidden;
-} */
+.location__heading {
+  margin-top: 70px;
+}
 
 
 
