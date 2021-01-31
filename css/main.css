@@ -1100,24 +1100,22 @@ iframe {
 .copy-button:before {
   content: url('/img/ip-copy.svg');
   position: absolute;
-  left: 140px;
-  top: 35px;
+  left: 166px;
+  top: 49px;
   display: block;
   opacity: 0;
-  transition:0.34s cubic-bezier(0,1.11,1,.15);
+  transition: 0.34s cubic-bezier( .42, 0, .58, 1 );
 }
 
-.copy-button:active:before{
+.copy-button:focus:before {
   opacity: 1;
-  background: #000;
-  animation: opacity 2s cubic-bezier(0,1.11,1,.15) forwards;
+  animation: opacity 3s cubic-bezier( .42, 0, .58, 1 ) forwards;
 }
 
-.copy-button:focuse:before{
+/* .copy-button:focuse:before{
   opacity: 1;
-  background: #000;
-  animation: opacity 2s cubic-bezier(0,1.11,1,.15) forwards;
-}
+  animation: opacity 0.1s cubic-bezier(0,1.11,1,.15) linear;
+} */
 
 @keyframes opacity{
   0%,100%{
@@ -1127,6 +1125,7 @@ iframe {
     opacity: 1;
   }
 }
+
 
 
 

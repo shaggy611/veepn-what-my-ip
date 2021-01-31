@@ -5,14 +5,14 @@ window.onload = function() {
         let copyText = document.querySelector(".client-ip").textContent;
         if(navigator.clipboard) {
             navigator.clipboard.writeText( copyText );
-            console.log("copied with clipboard API");
+            copyButton.classList.add("copy-button-click:before");
         }
         else {
-            ipInfo.select();
+            let r = document.createRange();
+            r.selectNode(ipInfo);
+            document.getSelection().addRange(r);
             document.execCommand("copy");
-            console.log("copied with execCommand");
         }
-        
     }
 
 
