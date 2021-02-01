@@ -8,10 +8,12 @@ window.onload = function() {
             copyButton.classList.add("copy-button-click:before");
         }
         else {
+            copyButton.classList.remove("copy-button-click");
             let r = document.createRange();
             r.selectNode(ipInfo);
             document.getSelection().addRange(r);
             document.execCommand("copy");
+            copyButton.classList.add("copy-button-click");
         }
     }
 

@@ -63,7 +63,9 @@
 
 .left-table-wrapper {
   background: #FFFFFF;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   width: 345px;
   margin-left: auto;
   margin-right: auto;
@@ -73,7 +75,9 @@
 
 .right-table-wrapper {
   background: #FFFFFF;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -81,7 +85,9 @@
 }
 
 ._shadow {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 }
 
 .location__download-btn {
@@ -95,7 +101,7 @@
 
 .table__alert {
   margin-bottom: 24px;
-  width: 303px;
+  width: 275px;
   height: 64px;
 }
 
@@ -128,7 +134,9 @@
 
   width: 345px;
   height: 193px;
-  border-radius: 0px;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
   top: 0px;
     left: 0px;
 }
@@ -149,7 +157,10 @@
   width: 28px;
   height: 32px;
   background: url(/img/play-btn.png);
-  background-size: 100%;
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100%;
+       -o-background-size: 100%;
+          background-size: 100%;
   background-repeat: no-repeat;
   top: 81px;
   left: 159px;
@@ -161,7 +172,9 @@ iframe {
   position: relative;
   top: 0px;
   left: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
   z-index: 2;
 }
 
@@ -171,7 +184,10 @@ iframe {
   display: block;
   width: 345px;
   height: 810px;
-  background-size: 100%;
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100%;
+       -o-background-size: 100%;
+          background-size: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -255,14 +271,21 @@ iframe {
 }
 
 .navbar-expand-md .navbar-nav {
-  align-items: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 20px;
 }
 
 .navbar-nav > li:last-child {
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
 }
 
 .dns-log-parag {
@@ -285,11 +308,14 @@ iframe {
   width: 345px;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   padding-right: 0px;
   padding-top: 17px;
   padding-left: 20px;
   padding-bottom: 22px;
+  display: none;
 }
 
 .dns-right-table-wrapper {
@@ -297,7 +323,9 @@ iframe {
   width: 345px;
   margin-right: auto;
   margin-left: auto;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   margin-top: 16px;
   padding-top: 17px;
   padding-left: 20px;
@@ -305,8 +333,14 @@ iframe {
 }
 
 .close-button {
-    left: 337px;
+    left: 323px;
     top: 14px;
+    z-index: 1000;
+    width: 54px;
+}
+
+.close-button > img {
+  width: auto;
 }
 
 .left-table-wrapper:after {
@@ -318,8 +352,8 @@ iframe {
 .dns-pop-up {
   margin-top: 0px;
   position: relative !important;
-  padding-bottom: 62px;
-  top: -13px;
+  padding-bottom: 30px;
+  top: -84px;
   z-index: 1000;
   background: #F2F7FD;
   z-index: 1000;
@@ -330,8 +364,8 @@ iframe {
 .webrtc-pop-up {
   margin-top: 0px;
   position: relative !important;
-  padding-bottom: 62px;
-  top: -13px;
+  padding-bottom: 30px;
+  top: -84px;
   z-index: 1000;
   background: #F2F7FD;
   z-index: 1000;
@@ -345,11 +379,17 @@ iframe {
   width: 100vw;
   height: 754vh;
   background: rgba(0, 0, 0, 0.42);
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
 .location__heading {
   margin-top: 70px;
+}
+
+.copy-button:before {
+  left: 205px;
+  top: 136px;
 }
 
 
@@ -402,13 +442,13 @@ iframe {
 @media (min-height: 500px) and (max-height: 740px) {
   .dns-pop-up {
     position: relative !important;
-    top: -18px;
+    top: -80px;
     padding-bottom: 62px;
   }
 
   .webrtc-pop-up {
     position: relative !important;
-    top: -18px;
+    top: -80px;
     padding-bottom: 62px;
   }
 }

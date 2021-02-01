@@ -6,7 +6,10 @@
     .location__map-img {
         background-image: url('/img/map-tablet.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        -webkit-background-size: 100% 100%;
+           -moz-background-size: 100%;
+             -o-background-size: 100%;
+                background-size: 100%;
         width: 736px;
         height: 235px;
         position: relative;
@@ -16,8 +19,11 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.18));
-        border-radius: 0px 0px 10px 10px;
+        -webkit-filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.18));
+                filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.18));
+        -webkit-border-radius: 0px 0px 10px 10px;
+           -moz-border-radius: 0px 0px 10px 10px;
+                border-radius: 0px 0px 10px 10px;
     }
 
     .location__table-wrapper {
@@ -54,8 +60,12 @@
     }
 
     .location__table-wrapper {
-        box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
-        border-radius: 10px 10px 0px 0px;
+        -webkit-box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
+           -moz-box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
+                box-shadow: 0px 5px 15px rgba(214, 217, 222, 0.45);
+        -webkit-border-radius: 10px 10px 0px 0px;
+           -moz-border-radius: 10px 10px 0px 0px;
+                border-radius: 10px 10px 0px 0px;
     }
 
     .location__download-btn {
@@ -64,7 +74,7 @@
 
     .location__heading {
         margin-bottom: 35px;
-        margin-top: 39px;
+        margin-top: 112px;
     }
 
     .location {
@@ -78,7 +88,9 @@
     }
 
     ._shadow {
-        box-shadow: none;
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
       }
 
       .change-ip__heading {
@@ -93,7 +105,9 @@
       }
 
       .video-poster {
-          border-radius: 0px;
+          -webkit-border-radius: 0px;
+             -moz-border-radius: 0px;
+                  border-radius: 0px;
           width: 707px;
           height: 398px;
       }
@@ -105,7 +119,9 @@
       iframe {
         width: 707px !important;
         height: 398px !important;
-        border-radius: 0px;
+        -webkit-border-radius: 0px;
+           -moz-border-radius: 0px;
+                border-radius: 0px;
       }
 
       .change-ip__paragraph {
@@ -130,7 +146,10 @@
 
     .three-steps__steps-img {
         background-image: url('/img/3-steps-tablet.png');
-        background-size: 100%;
+        -webkit-background-size: 100% 100%;
+           -moz-background-size: 100%;
+             -o-background-size: 100%;
+                background-size: 100%;
         margin-left: auto;
         margin-right: auto;
         width: 760px;
