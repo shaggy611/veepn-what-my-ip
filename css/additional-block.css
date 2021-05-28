@@ -1,0 +1,93 @@
+.ip-definition {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ip-types {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #E9F3FF;
+}
+.ipv6 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.public-private {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #E9F3FF;
+}
+
+.ip-definition__img {
+    margin-top: 73px;
+    margin-bottom: 73px;
+}
+
+.paragraph {
+    color: #2A334F;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.ip-definition__paragraph {
+    max-width: 913px;
+    width: 100%;
+}
+
+.ip-types__paragraph {
+    max-width: 771px;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.ip-types__info {
+    max-width: 416px;
+    
+}
+
+.ip-types__paragraph {
+    margin-top: 16px;
+    margin-bottom: 84px;
+}
+
+.ip-types__people-group {
+    margin-bottom: 57px;
+}
+
+.ip-types__people-crowd {
+    margin-bottom: 55px;
+}
+
+.ipv6__img {
+    margin-top: 63px;
+    margin-bottom: 70px;
+}
+
+.ipv6__info {
+    max-width: 900px;
+    width: 100%;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-left: 1em;
+}
+
+.public-private__heading {
+    margin-bottom: 40px;
+}
+
+.public-private__info {
+    max-width: 450px;
+    width: 100%;
+}
+
+@media (min-width:320px) and (max-width:767px){
+
+}
+@media (min-width:768px) and (max-width:1024px){
+
+}
